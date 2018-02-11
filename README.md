@@ -1,11 +1,11 @@
 # Dynamics365DurbleFunctions
-Ejemplo de inserción múltiple en Dynamics 365 mediante Durable Functions.
+Ejemplo de inserción múltiple en Dynamics 365 mediante Durable Functions.<br/>
 
-Para este ejemplo es necesario:
-1 - Tener un cuenta de Dynamics 365
-2 - Subscripción de Azure. No es necesaria, se puede lanzar en local, pero es mejor poderla lanzar en Azure
+Para este ejemplo es necesario:<br/>
+1 - Tener un cuenta de Dynamics 365<br/>
+2 - Subscripción de Azure. No es necesaria, se puede lanzar en local, pero es mejor poderla lanzar en Azure<br/>
 
-Pasos a seguir.
+Pasos a seguir.<br/>
 1 - Lanzar el proceso CreateFiles
     Este proceso nos crea mil ficheros con 50 elementos del tipo account.
 2 - Subir los 50 ficheros a un blob storage.

@@ -1,2 +1,16 @@
 # Dynamics365DurbleFunctions
-CompartiMOSS
+Ejemplo de inserción múltiple en Dynamics 365 mediante Durable Functions.<br/>
+
+Para este ejemplo es necesario:<br/>
+1 - Tener un cuenta de Dynamics 365<br/>
+2 - Subscripción de Azure. No es necesaria, se puede lanzar en local, pero es mejor poderla lanzar en Azure<br/>
+
+Pasos a seguir.<br/>
+1 - Lanzar el proceso CreateFiles<br/>
+    Este proceso nos crea mil ficheros con 50 elementos del tipo account.<br/>
+2 - Subir los 50 ficheros a un blob storage.<br/>
+3 - Crear una Queue con el nombre operation2.<br/>
+4 - En el proyecto VSSample ir a Counter.cs<br/>
+    En el método CreateOrganizationService en la variable discoveryUi poner la url del Dynamics365, en userCredentials.UserName.UserName poner el usuario y en userCredentials.UserName.Password el password<br/>
+5 - Si se ejecuta en local, ejecutar el poryecto VSSample, sino hacer el deploy en Azure y configurar las cadenas de conexión del storage y activar application insight.<br/>
+6 - Por último, añadir un elemento con el string "2" en la queue.<br/>
